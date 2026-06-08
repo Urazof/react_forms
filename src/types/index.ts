@@ -6,7 +6,7 @@ export interface Submission {
   age: number;
   email: string;
   gender: Gender;
-  terms: true;
+  terms: boolean;
   country: string;
   image: string;
   password: string;
