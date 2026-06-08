@@ -1,0 +1,92 @@
+.card {
+  border: 2px solid #e5e7eb;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  transition:
+    border-color 1s ease,
+    background-color 1s ease,
+    box-shadow 0.2s;
+}
+
+.card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+/* Подсветка новой карточки — снимается через 3 секунды, transition плавно убирает цвет */
+.cardNew {
+  border-color: #10b981;
+  background-color: #ecfdf5;
+  box-shadow:
+    0 0 0 4px rgba(16, 185, 129, 0.15),
+    0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.image {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  display: block;
+}
+
+.content {
+  padding: 14px 16px 16px;
+  position: relative;
+}
+
+.newBadge {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  background-color: #10b981;
+  color: #fff;
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: 999px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.name {
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin: 0 0 12px;
+  color: #111827;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding-right: 56px;
+}
+
+.fields {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.fieldRow {
+  display: flex;
+  gap: 6px;
+  align-items: baseline;
+}
+
+.fieldRow dt {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: #6b7280;
+  min-width: 58px;
+  flex-shrink: 0;
+}
+
+.fieldRow dd {
+  font-size: 0.875rem;
+  color: #111827;
+  margin: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

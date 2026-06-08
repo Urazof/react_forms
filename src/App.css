@@ -46,3 +46,22 @@
   background-color: #10b981;
   color: #fff;
 }
+
+.no-submissions {
+  color: #6b7280;
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+.submissions-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 0 0 20px;
+  color: #374151;
+}
+
+.submissions-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 20px;
+}
