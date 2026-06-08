@@ -9,7 +9,7 @@ import {
   STRENGTH_COLORS,
   PasswordStrength,
 } from '../../../utils/passwordStrength';
-import styles from './UncontrolledForm.module.css';
+import styles from '../formStyles.module.css';
 
 interface Props {
   onClose: () => void;

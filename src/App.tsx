@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Modal } from './components/Modal/Modal';
 import { UncontrolledForm } from './components/forms/UncontrolledForm/UncontrolledForm';
+import { RHFForm } from './components/forms/RHFForm/RHFForm';
 import './App.css';
 
 type FormType = 'uncontrolled' | 'rhf';
@@ -39,7 +40,9 @@ function App() {
         {activeForm === 'uncontrolled' && (
           <UncontrolledForm onClose={() => setActiveForm(null)} />
         )}
-        {activeForm === 'rhf' && <p>RHF форма — следующий шаг.</p>}
+        {activeForm === 'rhf' && (
+          <RHFForm onClose={() => setActiveForm(null)} />
+        )}
       </Modal>
     </main>
   );
