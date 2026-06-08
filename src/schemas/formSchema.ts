@@ -48,6 +48,7 @@ export function createFormSchema(countries: string[]) {
 
       image: z
         .instanceof(File, { message: 'Загрузите изображение' })
+        .refine((f) => f.size > 0, 'Загрузите изображение')
         .refine(
           (f) => ALLOWED_TYPES.includes(f.type),
           'Допустимы только PNG и JPEG'

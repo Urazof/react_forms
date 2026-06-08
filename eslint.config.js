@@ -26,5 +26,11 @@ export default defineConfig([
     settings: {
       react: { version: 'detect' },
     },
+    rules: {
+      '@typescript-eslint/no-unused-vars': [
+        'error',
+        { varsIgnorePattern: '^_', argsIgnorePattern: '^_' },
+      ],
+    },
   },
 ]);
