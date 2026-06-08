@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { Submission, Gender } from '../../../types';
+import type { Submission, Gender } from '../../../types';
 import { useAppDispatch } from '../../../store/hooks';
 import { markAsRead } from '../../../store/submissionsSlice';
 import styles from './SubmissionCard.module.css';

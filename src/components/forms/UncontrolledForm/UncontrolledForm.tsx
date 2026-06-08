@@ -7,8 +7,8 @@ import {
   getPasswordStrength,
   STRENGTH_LABELS,
   STRENGTH_COLORS,
-  PasswordStrength,
 } from '../../../utils/passwordStrength';
+import type { PasswordStrength } from '../../../utils/passwordStrength';
 import styles from '../formStyles.module.css';
 
 interface Props {

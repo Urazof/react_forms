@@ -2,14 +2,15 @@ import { useForm, Controller, useWatch } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { useAppDispatch, useAppSelector } from '../../../store/hooks';
 import { addSubmission } from '../../../store/submissionsSlice';
-import { createFormSchema, FormValues } from '../../../schemas/formSchema';
+import { createFormSchema } from '../../../schemas/formSchema';
+import type { FormValues } from '../../../schemas/formSchema';
 import { imageToBase64 } from '../../../utils/imageToBase64';
 import {
   getPasswordStrength,
   STRENGTH_LABELS,
   STRENGTH_COLORS,
-  PasswordStrength,
 } from '../../../utils/passwordStrength';
+import type { PasswordStrength } from '../../../utils/passwordStrength';
 import styles from '../formStyles.module.css';
 
 interface Props {

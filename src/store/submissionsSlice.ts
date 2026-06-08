@@ -1,5 +1,6 @@
-import { createSlice, PayloadAction } from '@reduxjs/toolkit';
-import { Submission } from '../types';
+import { createSlice } from '@reduxjs/toolkit';
+import type { PayloadAction } from '@reduxjs/toolkit';
+import type { Submission } from '../types';
 
 type SubmissionInput = Omit<Submission, 'id' | 'isNew'>;
 
